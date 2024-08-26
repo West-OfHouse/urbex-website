@@ -1,0 +1,107 @@
+:root {--jet: #353535ff;--indigo-dye: #284b63ff;--caribbean-current: #3c6e71ff;--cambridge-blue: #99c2a2ff;--platinum: #d9d9d9ff;}
+html::-webkit-scrollbar {display: none;}
+
+html, body {
+	margin: 0;
+	padding: 0;
+	height: 480vh;
+	width: 100vw;
+}
+
+body {
+	display: grid;
+	grid-template-rows: repeat(48, 10vh);
+	grid-template-columns: repeat(10, 10vw);
+}
+
+h1 {
+	margin: 0;
+	font-family: "New Amsterdam";
+	font-size: 10vw;
+	color: var(--platinum);
+	opacity: 0.9;
+}
+
+span {
+	margin: 0;
+	font-family: "Roboto Slab";
+	font-size: 2.5vw;
+	color: var(--platinum);
+	opacity: 0.75;
+}
+
+#overlayOne {
+	background-color: black;
+	opacity: .75;
+	grid-area: 1 / 1 / 16 / 11;
+}
+
+#overlayTwo {
+	background-color: black;
+	opacity: 0.75;
+	grid-area: 16 / 1 / 49 / 11;
+}
+
+#siloInfo {
+	grid-area: 3 / 2 / 9 / 8;
+	z-index: 2;
+}
+
+#siloContainer {
+	grid-area: 1 / 1 / 31 / 11;
+	height: 300vh;
+	width: 100vw;
+}
+#siloVideo {
+	grid-area: 1 / 1 / 11 / 11;
+	height: 100vh;
+	width: 100vw;
+	object-fit: cover;
+	z-index: -2;
+	position: sticky;
+	top: 0;
+}
+
+#blockOne {
+	grid-area: 18 / 1 / 29 / 11;
+	height: 100vh;
+	width: 100vw;
+	z-index: 1;
+	background-color: var(--jet);
+	opacity: 0.98;
+	display: grid;
+	grid-template-rows: 100%;
+	grid-template-columns: 30% 70%;
+}
+
+#logo {
+	height: 60%;
+	margin: auto;
+}
+
+#manifesto {
+	font-family: "Roboto Slab";
+	font-size: 2vw;
+	margin: auto;
+	padding: 5%;
+	color: var(--platinum);
+	opacity: 0.95;
+	word-break: break-word;
+	text-justify: inter-word;
+}
+
+#armyContainer {
+	grid-area: 18 / 1 / 49 / 11;
+	height: 310vh;
+	width: 100vw;
+}
+#armyVideo {
+	grid-area: 26 / 1 / 36 / 11;
+	height: 100vh;
+	width: 100vw;
+	object-fit: cover;
+	z-index: -2;
+	position: sticky; 
+	top: 0;
+	align-self: flex-end;
+}
